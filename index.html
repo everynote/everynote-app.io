@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="EveryNote" content="">
+    <meta name="Bruno Bini & Denver Rodrigues" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+<!-- create menu and place logo here -->
+
+<div class="container">
+    <p>
+      <label for="new-task">New Task</label>
+      <input id="new-task" type="text">
+      <button>Add</button>
+    </p>
+    
+    <h3>Task</h3>
+    <ul id="incomplete-tasks">
+      <li>
+        <input type="checkbox">
+        <label>Update GitHub</label>
+        <button class="edit">Edit</button>
+        <button class="done">Done</button> 
+      </li>
+      <!-- check why not showing list -->
+      <li>
+        <input type="checkbox">
+        <label>Create Storyboards</label>
+        <button class="edit">Edit</button>
+        <button class="Done">Done</button>
+      </li>
+      <li>
+          <input type="checkbox">
+          <label>Upload pictures on Wordpress</label>
+          <button class="edit">Edit</button>
+          <button class="Done">Done</button>
+        </li>
+    </ul>
+    
+    <h3>Completed</h3>
+    <ul id="completed-tasks">
+      <li>
+        <input type="checkbox" checked="">
+        <label>Finish html</label>
+        <button class="edit">Edit</button>
+        <button class="done">Done</button>
+      </li>
+      <li>
+          <input type="checkbox" checked="">
+          <label>Charrette</label>
+          <button class="edit">Edit</button>
+          <button class="done">Done</button>
+        </li>
+    </ul>
+  </div>
+</body>
+</html>
