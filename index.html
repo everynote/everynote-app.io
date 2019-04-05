@@ -12,13 +12,28 @@
   <body>
 
 <!-- create menu and place logo here -->
+<div class="topbar">
+
+  <div class="Threelines"><img src="img/threelines.png" alt="Menu App" width="32" height="32"></div>
+
+  <div class="profile"><img src="img/profile.png" alt="Signup" align="Right" width="32" height="32"></div>
+</div>
 
 <div class="container">
-    <p>
+    <form>
       <label for="new-task">New Task</label>
       <input id="new-task" type="text">
       <button>Add</button>
-    </p>
+    </form>
+
+    <form id="filterCategories">
+      <ul class="filters">
+        <li class="cat"><input type="radio" name="category" value="all" id="filterAll" checked><label for="filterAll">All</label></li>
+        <li class="cat"><input type="radio" name="category" value="3D" id="filter3D"><label for="filterFruit">3D</label></li>
+        <li><input type="radio" name="category" value="PT" id="filterPT"><label for="filterVeg">PT</label></li>
+        <li><input type="radio" name="category" value="device-width" id="filterWD"><label for="filterDry">WD</label></li>
+      </ul>
+    </form>
     
     <h3>Task</h3>
     <ul id="incomplete-tasks">
@@ -44,20 +59,11 @@
     </ul>
     
     <h3>Completed</h3>
-    <ul id="completed-tasks">
-      <li>
-        <input type="checkbox" checked="">
-        <label>Finish html</label>
-        <button class="edit">Edit</button>
-        <button class="done">Done</button>
-      </li>
-      <li>
-          <input type="checkbox" checked="">
-          <label>Charrette</label>
-          <button class="edit">Edit</button>
-          <button class="done">Done</button>
-        </li>
+    <ul id="complete-tasks">
+
     </ul>
-  </div>
+
+  <script src="js/main.js"></script>
+
 </body>
 </html>

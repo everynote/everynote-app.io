@@ -118,3 +118,8 @@ body {
   ul li.editMode label {
     display:none;
   }
+  .cat {
+    display: inline-block;
+    margin-right: 1em;
+    line-height: 1.5;
+  }
